@@ -22,54 +22,58 @@ export default () => {
   products()
 
   const instruction = () => {
-    let swiper = new Swiper(".instruction-product-swiper", {
-      wrapperClass: "instruction-product-swiper-wrapper",
-      spaceBetween: 10,
+    let swiper2 = new Swiper(".instruction-product-instruction-swiper-2", {
+      wrapperClass: "instruction-product-instruction-swiper-wrapper-2",
+      spaceBetween: 9,
+      slidesPerView: 7,
+      allowTouchMove: false,
       navigation: {
-        nextEl: ".instruction-product-swiper-button-next",
-        prevEl: ".instruction-product-swiper-button-prev",
+        nextEl: ".instruction-product-instruction-swiper-2-button-next",
+        prevEl: ".instruction-product-instruction-swiper-2-button-prev",
       },
     });
-    let swiper2 = new Swiper(".instruction-product-swiper-2", {
-      wrapperClass: "instruction-product-swiper-wrapper-2",
-      spaceBetween: 10,
+
+    let swiper = new Swiper(".instruction-product-instruction-swiper", {
+      wrapperClass: "instruction-product-instruction-swiper-wrapper",
+      spaceBetween: 9,
+      slidesPerView: 1,
+      centeredSlides: true,
       navigation: {
-        nextEl: ".slider-two-next",
-        prevEl: ".slider-two-prev",
+        nextEl: ".instruction-product-instruction-swiper-button-next",
+        prevEl: ".instruction-product-instruction-swiper-button-prev",
       },
       thumbs: {
-        swiper: swiper,
+        swiper: swiper2,
       },
     });
-    swiper.on('slideChange', () => swiper2.slideTo(swiper.activeIndex));
   }
   instruction()
 
   const certificate = () => {
-    let swiper = new Swiper(".certificate-product-swiper", {
-      wrapperClass: "certificate-product-swiper-wrapper",
-      loop: true,
-      spaceBetween: 10,
+    let swiper2 = new Swiper(".certificate-product-certificate-swiper-2", {
+      wrapperClass: "certificate-product-certificate-swiper-wrapper-2",
+      spaceBetween: 9,
+      slidesPerView: 7,
+      allowTouchMove: false,
       navigation: {
-        nextEl: ".certificate-product-swiper-button-next",
-        prevEl: ".certificate-product-swiper-button-prev",
+        nextEl: ".certificate-product-certificate-swiper-2-button-next",
+        prevEl: ".certificate-product-certificate-swiper-2-button-prev",
       },
     });
 
-    let swiper2 = new Swiper(".certificate-product-swiper-2", {
-      wrapperClass: "certificate-product-swiper-wrapper-2",
-      loop: true,
-      spaceBetween: 10,
+    let swiper = new Swiper(".certificate-product-certificate-swiper", {
+      wrapperClass: "certificate-product-certificate-swiper-wrapper",
+      spaceBetween: 9,
+      slidesPerView: 1,
+      centeredSlides: true,
       navigation: {
-        nextEl: ".slider-two-next",
-        prevEl: ".slider-two-prev",
+        nextEl: ".certificate-product-certificate-swiper-button-next",
+        prevEl: ".certificate-product-certificate-swiper-button-prev",
       },
       thumbs: {
-        swiper: swiper,
+        swiper: swiper2,
       },
     });
-
-    swiper.on('slideChange', () => swiper2.slideTo(swiper.activeIndex));
   }
   certificate()
 }

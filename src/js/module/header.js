@@ -1,4 +1,4 @@
-export default ()=>{
+export default () => {
   const iconVectorOne = document.getElementById('icon-vector-one');
   const iconVectorTwo = document.getElementById('icon-vector-two');
   const software = document.getElementById('software');
@@ -8,6 +8,10 @@ export default ()=>{
   const menu = document.getElementById('menu');
   const menu__link = document.getElementById('menu-block')
   const menu__close = document.getElementById('menu-close')
+  const search = document.getElementById('search')
+  const searchOpen = document.getElementById('search-open')
+  const searchClock = document.getElementById('search-clock')
+  const line = document.querySelectorAll('.delete-line')
 
   const close = () => {
     menu__close.classList.remove('menu_active-close')
@@ -15,6 +19,22 @@ export default ()=>{
     menu__link.classList.remove('menu_active')
     document.body.style.overflowY = 'scroll'
   }
+
+  searchOpen.addEventListener('click', function () {
+    if (!search.classList.contains('search-nav-active')) {
+      search.classList.add('search-nav-active')
+      searchOpen.classList.add('search-nav-inactive')
+      line.forEach(value => value.classList.add('search-nav-active-line'))
+    }
+  })
+
+  searchClock.addEventListener('click', function () {
+    if (search.classList.contains('search-nav-active')) {
+      search.classList.remove('search-nav-active')
+      searchOpen.classList.remove('search-nav-inactive')
+      line.forEach(value => value.classList.remove('search-nav-active-line'))
+    }
+  })
 
   if (menu)
     menu.addEventListener('click', function () {

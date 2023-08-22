@@ -141,6 +141,17 @@
 }
 
 .m-li {
+  button {
+    background: transparent;
+    border: none;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+
+.m-li {
   color: #fff !important;
   display: flex;
   height: 60px !important;
@@ -244,25 +255,26 @@
   display: block !important;
 }
 
-.nav-show a:first-child{
+.nav-show a:first-child {
   position: relative;
 }
 
-.nav-show a:first-child:before{
-  content:'';
+.nav-show a:first-child:before {
+  content: '';
   position: absolute;
   bottom: -10px;
   width: 100%;
-  height:100%;
+  height: 100%;
 }
 
-.nav-show .head-ul-list a:first-child:before{
-  content:none;
+.nav-show .head-ul-list a:first-child:before {
+  content: none;
 }
 
 .nav-show:hover {
   border-bottom: 3px solid rgb(19, 70, 153);
 }
+
 .nav-show {
   border-bottom: 3px solid transparent;
   margin-bottom: -3px;
@@ -287,6 +299,72 @@
   justify-content: space-between;
   align-items: flex-end;
 }
+
+.header-nav {
+  position: relative;
+}
+
+.search-nav-active-line {
+  opacity: 0;
+  margin: 0 5px;
+}
+
+.search-nav-active {
+  display: flex !important;
+}
+
+.search-nav-inactive {
+  display: none !important;
+}
+
+.search-input-index {
+  display: none;
+  align-items: center;
+  position: absolute;
+  top: 150%;
+  background: #fff;
+  z-index: 9;
+  right: -30px;
+
+  form {
+    display: flex;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+    border: 1px solid #9F9F9F;
+    padding: 3px 8px;
+    width: 210px;
+    height: 30px;
+  }
+
+  input {
+    cursor: pointer;
+    border: none !important;
+    outline: none !important;
+  }
+
+  svg {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  button {
+    background: transparent;
+    border: none;
+  }
+}
+
+
+.element.style {
+  width: 160px;
+}
+
+.search-input-index-none {
+  display: none;
+}
+
 
 @media screen and (min-width: 1921px) {
   .header-menu {
@@ -330,7 +408,7 @@
     font-size: 12px;
   }
   .header-logo {
-   margin-left: 10px;
+    margin-left: 10px;
   }
 }
 
@@ -396,6 +474,7 @@
   }
   .header-nav {
     display: none;
+
   }
   .header-nav-media {
     display: block;
