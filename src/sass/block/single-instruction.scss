@@ -1,0 +1,116 @@
+.single-instruction {
+  margin-bottom: 100px;
+
+  .single-instruction-container {
+    width: 100%;
+    max-width: 1414px;
+    margin: 0 auto;
+  }
+
+  .bread {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+  }
+
+  .bread > a {
+    color: #BABABA;
+  }
+
+  .bread > span {
+    margin: 0 5px;
+    color: #BABABA;
+  }
+
+  .pro-cards {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .pro-card-out {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sms-card {
+    height: 280px;
+  }
+
+  .pro-card {
+    width: 354px;
+    height: 280px;
+    position: relative;
+    box-shadow: 3px 3px 10px 1px #ddd;
+    margin-top: 20px;
+    display: block;
+  }
+
+  .pro-card-t {
+    position: absolute;
+    top: 10px;
+    left: 5px;
+  }
+
+  .pro-card-t1 {
+    font-size: 20px;
+    line-height: 30px;
+    display: block;
+    text-align: center;
+    color: #000;
+  }
+
+  .pro-card-t2 {
+    font-size: 12px;
+    line-height: 14px;
+    background: #1e3d76;
+    color: #fff;
+    display: block;
+    text-align: center;
+    width: 141px;
+    padding: 5px 0;
+  }
+
+  .pro-card-img {
+    max-width: 100%;
+    display: block;
+    cursor: pointer;
+    height: 218px;
+    margin: 0 auto;
+  }
+
+  .sms-download-btn {
+    background: #1e3d76;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    box-shadow: 2px 2px 1px 0px #ddd;
+    width: 95px;
+    height: 30px;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .pro-card::after {
+    flex: auto;
+    content: '';
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .single-instruction {
+    .single-instruction-container {
+      padding: 0 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .single-instruction {
+    .bread a {
+      font-size: 12px;
+    }
+  }
+}

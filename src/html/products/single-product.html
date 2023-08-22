@@ -1,0 +1,45 @@
+<div class="single-product">
+  <div class="container-block">
+    <div class="lonely-product">
+      <div class="lonely-product-img">
+        <img src="../img/single-banner.png" alt="banner">
+      </div>
+      <div class="lonely-product-link">
+        <div class="lonely-product-container">
+          <ul class="lonely-product-ul">
+            <li data-id="1" class="lonely-product-li lonely-product-active">
+              <span>Технические данные</span>
+            </li>
+            <li data-id="2" class="lonely-product-li">
+              <span>Оборудование</span>
+            </li>
+            <li data-id="3" class="lonely-product-li">
+              <span>Программное обеспечение</span>
+            </li>
+            <li data-id="4" class="lonely-product-li">
+              <span>Инструкция</span>
+            </li>
+            <li data-id="5" class="lonely-product-li">
+              <span>Сертификат</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div data-id="1" class="single-products-content single-products-content-active">
+        @@include("single-product/technical.html")
+      </div>
+      <div data-id="2" class="single-products-content">
+        @@include("single-product/equipment.html")
+      </div>
+      <div data-id="3" class="single-products-content">
+        @@include("single-product/software.html")
+      </div>
+      <div data-id="4" class="single-products-content">
+        @@include("single-product/instruction.html")
+      </div>
+      <div data-id="5" class="single-products-content">
+        @@include("single-product/certificate.html")
+      </div>
+    </div>
+  </div>
+</div>

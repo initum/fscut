@@ -1,0 +1,134 @@
+.footer {
+  background-color: rgb(52, 52, 52);
+  padding-top: 68px;
+  color: #fff;
+  padding-bottom: 30px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.footer-data {
+  width: 100%;
+  max-width: 1414px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  margin-bottom: 32px;
+}
+
+.footer-links {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-title a {
+  line-height: 29px;
+  font-size: 17px !important;
+}
+
+.footer-links a {
+  text-decoration: none;
+  line-height: 32px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.footer-link-contact {
+  margin-top: 20px;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+}
+
+.footer-link-contact p {
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 12px;
+  margin-top: -4px;
+}
+
+.footer-email {
+  margin-top: 14px;
+}
+
+.footer-email a {
+  text-decoration: none;
+  color: #fff !important;
+  margin-right: 22px;
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.footer-copyright {
+  margin-top: 5px;
+}
+
+.footer-laser {
+  margin-left: -34px;
+}
+
+.footer-contact {
+  margin-left: -15px;
+}
+
+.footer-copyright p {
+  font-family: PingFang-SC, sans-serif;
+  color: #fff !important;
+  margin-right: 22px;
+  font-size: 13px;
+  margin-top: 0;
+  line-height: 21px;
+  margin-bottom: 10px;
+}
+
+.footer-software {
+  margin-left: -13px;
+}
+
+@media screen and (max-width: 1430px) {
+  .footer-data {
+    padding: 0 15px;
+  }
+  .footer-laser {
+    margin-left: 0;
+  }
+
+  .footer-contact {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .footer-links a {
+    font-size: 12px;
+  }
+  .footer-title a {
+    font-size: 14px !important;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .footer-links > div {
+    margin-right: 5px;
+  }
+  .footer-links {
+    flex-wrap: wrap;
+  }
+
+  .footer-links a {
+    font-size: 10px;
+  }
+  .footer-title a {
+    font-size: 12px !important;
+  }
+  .footer-data li {
+    height: 20px;
+  }
+}

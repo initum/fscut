@@ -1,0 +1,22 @@
+.pagination{
+  .search-nav {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+  }
+  .page-numbers {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: rgba(128, 128, 128, 1);
+    margin: 0 11px;
+  }
+  .current {
+    background: rgba(59, 92, 188, 1);
+    color: #fff;
+  }
+}

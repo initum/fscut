@@ -1,0 +1,128 @@
+.news-page{
+  .news-container {
+    width: 100%;
+    max-width: 1267px;
+    margin: 0 auto;
+  }
+
+  .news-page-img img {
+    width: 100vw;
+    height: 409px;
+  }
+
+  .news-page-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 409px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 48px;
+  }
+
+  .news-card-data-time {
+    width: 70px;
+    border: 1px solid #9a9a9a;
+    height: 47px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .news-card-data {
+    display: flex;
+    align-items: center;
+    margin-top: 28px;
+  }
+
+  .news-card {
+    margin-bottom: 31px;
+  }
+
+  .news-card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .news-card-data-time p:first-child {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #636363;
+    margin: 0;
+  }
+
+  .news-card-data-time p:last-child {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #a8a8a8;
+    margin: 0;
+  }
+
+  .news-card-data-text p {
+    flex: 1;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #6b6b6b;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 1920px) {
+    .news-page-img img {
+      width: auto;
+    }
+  }
+
+  @media screen and (max-width: 1287px) {
+    .news-container {
+      padding: 0 15px;
+    }
+  }
+
+  @media screen and (max-width: 1149px) {
+    .news-card-list {
+      justify-content: center;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .news-card {
+      width: 100%;
+    }
+    .news-card-img img {
+      width: 100%;
+    }
+    .news-card-data-text p {
+      font-size: 13px;
+      padding-left: 10px;
+    }
+  }
+
+  @media screen and (max-width: 570px){
+    .news-page-img{
+      height: 200px;
+      margin-bottom: 10px;
+    }
+    .news-page-img img {
+      height: 200px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .news-card-data{
+      display: block;
+    }
+    .news-card-data-text p {
+      padding-left: 0;
+      margin-top: 10px;
+    }
+  }
+}

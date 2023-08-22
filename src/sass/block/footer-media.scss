@@ -1,0 +1,133 @@
+
+.footer-media-ul-list {
+  padding: 0;
+}
+
+.footer-media-ul-list li {
+  width: 90%;
+  margin: 0 auto;
+  list-style: none;
+}
+
+.footer-media-list {
+  height: 60px;
+  padding-left: 20px;
+  border: 1px solid #00000000;
+  border-top: 1px solid #999;
+  position: relative;
+  color: #212529;
+}
+
+.footer-media-list::before {
+  content: '+';
+  position: absolute;
+  right: 10px;
+  top: 30px;
+  transform: translateY(-50%);
+}
+
+.border {
+  border-bottom: 1px solid #999;
+}
+
+.footer-media-list-img {
+  display: flex;
+  align-items: center;
+
+}
+
+.footer-media-list-img p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.footer-media-list-img img {
+  width: 20px;
+  margin-left: 16px;
+}
+
+.footer-media-products-list img {
+  width: 130px;
+}
+
+.footer-media-products-list {
+  display: none;
+  width: 100%;
+  padding: 0 0 20px 0;
+}
+
+.footer-media-products-list a {
+  color: #555;
+  display: block;
+  line-height: 40px;
+  text-decoration: none;
+}
+
+.footer-media-products-list ul {
+  padding: 0;
+}
+
+.footer-media-products-action {
+  display: block;
+}
+
+.footer-media-software-action {
+  display: block;
+}
+
+.footer-media-follow-action {
+  display: block;
+  border-bottom: 1px solid #999;
+  text-align: center;
+  padding: 0;
+}
+
+.border-footer-media {
+  border: 1px solid #4d4d4d;
+}
+
+.footer-media-text p {
+  color: #666;
+  font-size: 10px;
+  padding: 0 16px;
+}
+
+.footer-media-button {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  margin-top: 20px;
+}
+
+.footer-media-button-link {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-media-button-link p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.footer-media-button-link a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+}
+@media screen and (max-width: 420px){
+  .footer-media-button-link p {
+    font-size: 12px;
+  }
+
+  .footer-media-button-link a {
+    font-size: 12px;
+  }
+}
+

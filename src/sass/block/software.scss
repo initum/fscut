@@ -1,0 +1,323 @@
+.software-page{
+  .software-page-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 409px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .sheet-card-logo picture {
+    display: contents;
+  }
+
+  .software-page-img img {
+    width: 100vw;
+    height: 409px;
+  }
+
+  .software-page-img picture {
+    display: flex;
+  }
+
+  .software-link {
+    background-color: #f8f8f8;
+    z-index: 99 !important;
+    box-shadow: 0px 0px 5px 0px rgba(7, 7, 7, 0.31);
+  }
+
+  .sheet-cutting-title {
+    position: relative;
+    margin-top: 29px;
+    margin-bottom: 31px;
+  }
+
+  .sheet-cutting-title h2 {
+    font-family: PingFang-SC-Semiboid, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin: 0;
+  }
+
+  .sheet-cutting-title::after {
+    content: '';
+    position: absolute;
+    bottom: -11px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2071F4;
+    width: 52px;
+    height: 3px;
+  }
+
+  .software-link a {
+    width: 100%;
+    height: 64px;
+    position: relative;
+    text-decoration: none;
+    font-family: PingFang-SC-Regular, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    color: rgba(102, 102, 102, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .software-link-container {
+    width: 100%;
+    max-width: 1414px;
+    margin: 0 auto;
+  }
+
+  .software-link-ul {
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: left;
+    flex-wrap: wrap;
+  }
+
+  .software-link-ul li {
+    position: relative;
+    max-width: 240px;
+    height: 64px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    min-width: 100px;
+    text-align: center;
+    margin-top: -2px;
+  }
+
+
+  //.software-link-ul li:hover a::before {
+  //  width: 100%;
+  //}
+
+  .software-link-ul a:hover {
+    color: rgba(102, 102, 102, 1);
+  }
+
+  .software-link-ul .sheet-card-action.hover::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    height: 4px;
+    background: #2071F4;
+  }
+
+  .software-link-ul li:first-child {
+    max-width: 333px;
+  }
+
+  .software-cards-sheet {
+    margin-top: 32px;
+  }
+
+  .software-cards-3d-cutting {
+    margin-top: -3px;
+  }
+
+  .sheet-cutting-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .sheet-cutting-card {
+    width: 100%;
+    height: 100%;
+    min-height: 224px;
+    max-width: 431px;
+    padding: 36px 27px 18px 25px;
+    background: #F9F9F9;
+    box-shadow: 0 0 20px 0 #ccc;
+    margin-bottom: 58px;
+  }
+
+  .sheet-card-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 29px;
+    height: 36px;
+  }
+
+  .sheet-card-logo p {
+    font-family: PingFang SC, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0 0 0 22px;
+    color: rgba(19, 70, 153, 1);
+  }
+
+  .sheet-card-text p {
+    font-family: PingFang-SC-Regular, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(153, 153, 153, 1);
+    margin: 0 0 12px 0;
+  }
+
+  .sheet-card-text-line {
+    background: rgba(204, 204, 204, 1);
+    height: 1px;
+    width: 100%;
+    margin-bottom: 14px;
+  }
+
+  .sheet-card-text-version {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .sheet-card-text-version p {
+    font-family: PingFang SC, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(102, 102, 102, 1);
+    margin: 0;
+  }
+
+  .sheet-card-text-version a {
+    width: 82px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 10px 0 #ccc;
+    cursor: pointer;
+    font-family: PingFang SC, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    color: rgba(30, 61, 118, 1);
+    line-height: 29px;
+    opacity: 0.8;
+    margin-left: 17px;
+  }
+
+  .sheet-card-text-link {
+    display: flex;
+  }
+
+  .card-action-product {
+    position: relative;
+  }
+
+  .card-action-product::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 100%;
+    left: 0;
+    background: #2071f4;
+  }
+
+  @media screen and (max-width: 1920px) {
+    .software-page-img img {
+      width: auto;
+    }
+  }
+
+  @media screen and (max-width: 1450px) {
+    .software-link-container {
+      padding: 0 15px;
+    }
+  }
+
+  @media screen and (max-width: 1330px) {
+
+    .sheet-cutting-cards {
+      justify-content: space-around;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .software-link-ul a {
+      font-size: 11px;
+    }
+  }
+
+  @media screen and (max-width: 930px) {
+    .software-link-ul li {
+      max-width: 100px;
+    }
+  }
+
+  @media screen and (max-width: 890px) {
+    .sheet-cutting-card {
+      margin-bottom: 24px;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .software-link a {
+      height: 55px;
+    }
+    .software-link-ul li {
+      height: 55px;
+    }
+  }
+
+  @media screen and (max-width: 610px) {
+    .software-link-ul {
+      display: block;
+    }
+    .software-link-ul li {
+      max-width: 100% !important;
+    }
+    .software-link-ul a {
+      font-size: 14px;
+    }
+    .software-link-container {
+      padding: 0;
+    }
+    .software-link-ul li:first-child::before {
+      display: none;
+    }
+    .software-link-ul li {
+      border-bottom: 1px solid #828181;
+    }
+  }
+
+  @media screen and (max-width: 570px) {
+    .software-page-img {
+      height: 200px;
+    }
+    .software-page-img img {
+      height: 200px;
+    }
+  }
+
+  @media screen and (max-width: 460px) {
+    .sheet-cutting .software-link-container {
+      padding: 0 15px;
+    }
+  }
+}
+

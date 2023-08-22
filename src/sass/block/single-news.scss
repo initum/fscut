@@ -1,0 +1,211 @@
+.single-news{
+  .single-news-container {
+    width: 100%;
+    max-width: 1414px;
+    margin: 0 auto;
+  }
+
+  .single-news p {
+    margin: 0;
+  }
+
+  .single-news-title {
+    margin-bottom: 57px;
+  }
+
+  .single-news-title h2 {
+    font-size: 22px;
+    color: rgba(48, 48, 48, 1);
+    width: 100%;
+    text-align: center;
+    line-height: 44px;
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+
+  .single-news-title p {
+    font-family: PingFang-SC-Semiboid, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(153, 153, 153, 1);
+    margin: 0;
+  }
+
+  .single-news-text p:first-child {
+    font-family: PingFang-SC-Semiboid, sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+  }
+
+  .single-news-text p {
+    font-family: PingFang-SC-Regular, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(33, 37, 41, 1);
+    margin: 0 0 8px 0;
+  }
+
+  .single-news-text img {
+    margin-bottom: 8px;
+  }
+
+  .single-news-text {
+    margin-bottom: 47px;
+  }
+
+  .single-news-list-title {
+    font-family: PingFang-SC-Regular, sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(33, 37, 41, 1);
+  }
+
+  .single-news-list-ol {
+    padding-left: 61px;
+    margin-top: 8px;
+  }
+
+  .single-news-list-ol li {
+    font-family: PingFang-SC-Regular, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(33, 37, 41, 1);
+  }
+
+  .single-news-list {
+    margin-bottom: 50px;
+  }
+
+  .single-news-text-400 {
+    font-family: PingFang-SC-Regular, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(33, 37, 41, 1);
+    margin-bottom: 14px !important;
+  }
+
+  .single-news-fun {
+    margin-bottom: 48px;
+  }
+
+  .single-news-fun p:first-child {
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+
+  .single-news-list-updated p {
+    font-weight: 400;
+  }
+
+  .single-news-list-updated {
+    margin-bottom: 52px;
+  }
+
+  .single-news-text-report {
+    font-family: PingFang-SC-Regular, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(33, 37, 41, 1);
+    padding-left: 40px;
+    margin-top: 16px !important;
+  }
+
+  .single-news ul {
+    list-style: none;
+  }
+
+  .single-news-list-updated ul {
+    padding-left: 40px;
+  }
+
+  .single-news-nest h3 {
+    font-family: PingFang-SC-Regular, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(33, 37, 41, 1);
+    margin: 0 0 10px 0;
+  }
+
+  .single-news-nest ul {
+    padding-left: 0;
+  }
+
+  .single-news-list-nest-li li {
+    margin-bottom: 24px;
+  }
+
+  .single-news-list-nest-li a {
+    color: #007bff;
+  }
+
+  .single-news-list-nest-li li:nth-child(4n) {
+    margin-bottom: 10px;
+  }
+
+  .single-news-list-nest-li img {
+    margin-bottom: -21px;
+  }
+
+  .single-news-list-nest-li li:last-child {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 1440px) {
+    .single-news-container {
+      padding: 0 15px;
+    }
+  }
+
+  @media screen and (max-width: 987px) {
+    .single-news-text img {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .single-news-text p:first-child {
+      font-size: 26px;
+    }
+    .single-news-text p {
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .single-news-title h2 {
+      font-size: 17px;
+      line-height: 26px;
+    }
+    .single-news-text p:first-child {
+      font-size: 24px;
+    }
+    .single-news-nest h3 {
+      font-size: 26px;
+    }
+  }
+}

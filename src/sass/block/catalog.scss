@@ -1,0 +1,211 @@
+.catalog {
+  width: 100%;
+  max-width: 1414px;
+  margin: 20px auto 77px auto;
+}
+
+.catalog-cards-swiper {
+  display: none;
+}
+
+.catalog-cards {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.catalog-card-data {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.catalog-card {
+  position: relative;
+  cursor: pointer;
+}
+
+.element-animation {
+  opacity: 0;
+  transform: translateY(30%);
+}
+
+.element-animation.element-show {
+  opacity: 1;
+  transition: all 1s;
+  transform: translateY(0%);
+}
+
+.catalog-card::after {
+  content: 'Более>';
+  position: absolute;
+  top: -1%;
+  right: 10px;
+  color: #aaa;
+  transition: transform .5s;
+  transform: translateY(-30px);
+}
+
+.catalog-card:hover::after {
+  cursor: pointer;
+  top: 5px;
+  right: 10px;
+  color: #aaa;
+  transform: translateY(0);
+}
+
+.catalog-card-title h1 {
+  position: absolute;
+  color: #353535;
+  font-size: 24px;
+  font-weight: 400;
+  top: 4%;
+  left: 8%;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.catalog-card-title p {
+  color: #3E3E3E;
+  position: absolute;
+  font-size: 16px;
+  font-weight: 300;
+  top: 15.1%;
+  left: 8%;
+  margin: 0;
+}
+
+.catalog-card {
+  width: 23%;
+  height: 344px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.catalog-card img {
+  transition: 0.5s
+}
+
+.catalog-card:hover img {
+  transform: translateX(-50%) scale(1.05);
+  transform-origin: center;
+}
+
+.catalog-card img {
+  max-width: 95%;
+  max-height: 73%;
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.catalog-cards-one {
+  background: url("../../img/card-barck-1.png") no-repeat;
+}
+
+.catalog-cards-two {
+  background: url("../../img/card-barck-2.png") no-repeat;
+}
+
+.catalog-cards-three {
+  background: url("../../img/card-barck-3.png") no-repeat;
+}
+
+.catalog-cards-four {
+  background: url("../../img/card-barck-4.png") no-repeat;
+}
+
+.catalog-cards-five {
+  background: url("../../img/card-barck-5.png") no-repeat;
+  margin-top: 28px;
+}
+
+.catalog-cards-six {
+  background: url("../../img/card-barck-6.png") no-repeat;
+  margin-top: 28px;
+}
+
+.catalog-cards-seven {
+  background: url("../../img/card-barck-7.png") no-repeat;
+  margin-top: 28px;
+}
+
+.catalog-cards-eight {
+  background: url("../../img/card-barck-8.png") no-repeat;
+  margin-top: 28px;
+}
+
+@media screen and (max-width: 1450px) {
+  .catalog {
+    padding: 0 15px;
+  }
+  .catalog-card {
+    height: 320px;
+  }
+  .catalog-card-title p {
+    margin-top: 6px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .catalog-card {
+    height: 270px;
+  }
+  .catalog-card-title h1 {
+    font-size: 20px;
+  }
+  .catalog-card-title p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .catalog-card {
+    height: 250px;
+  }
+  .catalog-card-title h1 {
+    font-size: 16px;
+  }
+  .catalog-card-title p {
+    font-size: 13px;
+    margin-top: 3px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .catalog-card-title h1 {
+    font-size: 12px;
+  }
+  .catalog-card-title p {
+    font-size: 9px;
+    margin-top: 0;
+  }
+  .displayNone {
+    display: none !important;
+  }
+  .element-show {
+    display: none !important;
+  }
+  .catalog-cards-swiper {
+    display: block;
+    overflow: auto;
+  }
+  .catalog {
+    background: #D2D2D2;
+  }
+  .catalog-cards {
+    flex-wrap: nowrap;
+  }
+  .catalog-card {
+    border-radius: 10px;
+    height: 175px;
+    width: 100%;
+    max-width: 165px;
+    margin: 10px 0;
+  }
+
+}

@@ -1,0 +1,73 @@
+$base-font-size: 14px;
+$base-font-family: 'PingFang-SC-Regular', sans-serif;
+$base-line-height: 1.2;
+
+* {
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: 'PingFang-SC-Regular';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../font/PingFang-SC-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'PingFang-SC-Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../font/PingFang-SC-Medium.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'PingFang-SC-Semiboid';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../font/PingFang-SC-Semibold.ttf) format('ttf');
+}
+body {
+  font-size: $base-font-size;
+  font-family: $base-font-family;
+  line-height: $base-line-height;
+  background-color: #FFFFFF;
+  overflow-x: hidden;
+  margin: 0px!important;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-media {
+  display: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+@media screen and (max-width: 570px) {
+  .footer {
+    display: none;
+  }
+  .footer-media {
+    display: block;
+  }
+}
+
+picture{
+  display: contents;
+}
+
+@import "block/*.scss";
+

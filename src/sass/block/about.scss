@@ -1,0 +1,215 @@
+.about-page{
+  .about-page-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 409px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .about-page-container {
+    width: 100%;
+    max-width: 1414px;
+    margin: 0 auto;
+  }
+
+  .about-page-container ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .about-page-img picture {
+    display: contents;
+  }
+
+  .about-page-img img {
+    width: 100vw;
+  }
+
+  .about-page-link {
+    box-shadow: 0 0 5px 0 rgba(7, 7, 7, 0.31);
+    height: 64px;
+    background: rgba(248, 248, 248, 1);
+  }
+
+  .about-page-link-ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .about-page-link-ul li {
+    max-width: 240px;
+    position: relative;
+    height: 64px;
+    cursor: pointer;
+    text-align: center;
+    min-width: 100px;
+  }
+
+  .about-page-link-ul li::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #2071f4;
+  }
+
+  .about-page-link-ul a {
+    color: #666;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: PingFang-SC-Regular, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+  }
+
+  .about-page-text {
+    margin-top: 49px;
+  }
+
+  .about-page-text h2 {
+    font-family: PingFang-SC-Regular, sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(77, 77, 77, 1);
+    margin: 0;
+
+  }
+
+  .about-page-text-ul {
+    margin-top: 23px;
+  }
+
+  .about-page-text-ul p {
+    font-family: PingFang-SC-Regular, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(158, 158, 158, 1);
+    margin: 0;
+    width: 100%;
+    max-width: 1305px;
+  }
+
+  .about-page-text-ul li {
+    margin-bottom: 25px;
+  }
+
+  .about-page-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 69px;
+  }
+
+  .about-page-card {
+    width: 48%;
+    color: #9e9e9e;
+    background: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 1px #ddd;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+
+  .about-page-card p:first-child {
+    font-family: PingFang-SC-Regular, sans-serif;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(158, 158, 158, 1);
+    margin: -4px 0 10px 0;
+  }
+
+  .about-page-card p:last-child {
+    font-family: PingFang-SC-Regular, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(158, 158, 158, 1);
+    margin: 0;
+  }
+
+  .about-page-card-img-ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  .about-page-card-img-ul li {
+    width: 22%;
+    margin-top: 20px;
+  }
+
+  .about-page-card-img-ul img {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1920px) {
+    .about-page-img img {
+      width: auto;
+    }
+  }
+
+  @media screen and (max-width: 1444px) {
+    .about-page-container {
+      padding: 0 15px;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .about-page-text h2 {
+      font-size: 18px;
+    }
+  }
+
+  @media screen and (max-width: 570px) {
+    .about-page-img {
+      height: 200px;
+    }
+    .about-page-img img {
+      height: 200px;
+    }
+    .about-page-cards {
+      display: block;
+    }
+    .about-page-card {
+      width: 100%;
+    }
+    .about-page-card-img-ul {
+      display: block;
+    }
+    .about-page-card-img-ul li {
+      width: 80%;
+      margin: 0 auto 10px auto;
+    }
+    .about-page-link .about-page-container {
+      padding: 0;
+    }
+  }
+}
