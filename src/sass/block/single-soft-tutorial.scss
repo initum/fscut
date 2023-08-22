@@ -1,0 +1,152 @@
+.single-soft-tutorial {
+  margin-bottom: 84px;
+  .single-soft-tutorial-container {
+    width: 100%;
+    max-width: 1414px;
+    margin: 0 auto;
+  }
+
+  .single-soft-tutorial-active::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    top: 100%;
+    left: 0;
+    background: #2071f4;
+  }
+
+  .bread {
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+  }
+
+  .bread > a {
+    color: #BABABA;
+    font-size: 16px;
+  }
+
+  .bread > span {
+    margin: 0 5px;
+    color: #BABABA;
+  }
+
+  .tutorials-head {
+    font-size: 20px;
+    margin-top: 115px;
+    position: relative;
+  }
+
+  .topics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .topics .topics-card {
+    cursor: pointer;
+    height: 360px;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px 2px #eee;
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  .topics .topics-card img {
+    width: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    margin-bottom: 40px;
+  }
+
+  .topics .topics-card .topics-title {
+    font-size: 18px;
+    position: relative;
+    margin-bottom: 20px;
+    color: #686868;
+  }
+
+  .topics .topics-card .topics-title::after {
+    position: absolute;
+    content: '';
+    width: 52px;
+    height: 3px;
+    background: #2071F4;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .topics .topics-card .topics-des {
+    font-size: 16px;
+    line-height: 20px;
+    color: #B3B3B3;
+    width: 314px;
+    word-break: break-word;
+  }
+
+
+}
+
+
+@media screen and (max-width: 1920px) {
+  .single-soft-tutorial-img img {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 1388px) {
+  .single-soft-tutorial-ul li:last-child {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1388px) {
+  .single-soft-tutorial-container {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .single-soft-tutorial-ul {
+    justify-content: space-around;
+  }
+  .single-soft-tutorial-li {
+    flex: none;
+    max-width: 300px;
+    margin-left: 0 !important;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .single-soft-tutorial-ul {
+    justify-content: start;
+  }
+  .single-soft-tutorial-li {
+    margin-right: 30px;
+    height: 46px;
+  }
+  .single-soft-tutorial-li {
+    padding: 12px;
+    height: unset;
+    flex: unset;
+    min-width: 90px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .single-soft-tutorial-img img {
+    height: 200px;
+  }
+  .single-soft-tutorial-img {
+    height: 200px;
+  }
+}

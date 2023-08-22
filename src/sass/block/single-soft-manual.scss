@@ -1,25 +1,11 @@
-.single-instruction {
+
+.single-soft-manual {
   margin-bottom: 100px;
 
-  .single-instruction-container {
+  .single-soft-manual-container {
     width: 100%;
     max-width: 1414px;
     margin: 0 auto;
-  }
-
-  .bread {
-    display: flex;
-    margin: 10px 0;
-    align-items: center;
-  }
-
-  .bread > a {
-    color: #BABABA;
-  }
-
-  .bread > span {
-    margin: 0 5px;
-    color: #BABABA;
   }
 
   .pro-cards {
@@ -100,15 +86,15 @@
 }
 
 @media screen and (max-width: 1450px) {
-  .single-instruction {
-    .single-instruction-container {
+  .single-soft-manual {
+    .single-soft-manual-container {
       padding: 0 15px;
     }
   }
 }
 
 @media screen and (max-width: 570px) {
-  .single-instruction {
+  .single-soft-manual {
     .bread a {
       font-size: 12px;
     }

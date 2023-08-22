@@ -1,0 +1,19 @@
+.bread {
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+
+  a {
+    color: #BABABA;
+  }
+
+  span {
+    margin: 0 5px;
+    color: #BABABA;
+  }
+  @media screen and (max-width: 570px) {
+    a {
+      font-size: 13px!important;
+    }
+  }
+}
